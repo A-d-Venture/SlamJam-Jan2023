@@ -22,14 +22,13 @@ public class RotateAroundAxis : MonoBehaviour
         {
             angleOfTheDangle += new Vector3(-1, 0, 0) * Time.deltaTime * upMoveSpeed;
             transform.localEulerAngles = angleOfTheDangle;
-            Debug.Log("current angle: " + angleOfTheDangle);
-            //transform.RotateAround(pivotPoint.transform.position, pivotPoint.transform.right * -1, upMoveSpeed * Time.deltaTime);
+            //Debug.Log("current angle: " + angleOfTheDangle);
         }
         else if (angleOfTheDangle.x < angleLowBound)//Angle is above lowerbound
         {
             angleOfTheDangle += new Vector3(1, 0, 0) * Time.deltaTime * downMoveSpeed;
             transform.localEulerAngles = angleOfTheDangle;
-            Debug.Log("current angle: " + angleOfTheDangle);
+            //Debug.Log("current angle: " + angleOfTheDangle);
         }
     }
 }
