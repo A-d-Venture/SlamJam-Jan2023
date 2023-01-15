@@ -9,13 +9,7 @@ public class LinearBetweenBounds : MonoBehaviour
     [SerializeField] GameObject movingObject;
 
     [SerializeField] private float upMoveSpeed = 5f;
-    [SerializeField] private float downMoveSpeed = 5f;
-
-    // Start is called before the first frame update
-    void Start()
-        {
-            
-        }
+    [SerializeField] private float downMoveSpeed = 10f;
 
     // Update is called once per frame
     void Update()
