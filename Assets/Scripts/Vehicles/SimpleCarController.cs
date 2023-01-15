@@ -7,6 +7,15 @@ public class SimpleCarController : MonoBehaviour
     public List<AxleInfo> axleInfos; // the information about each individual axle
     public float maxMotorTorque; // maximum torque the motor can apply to wheel
     public float maxSteeringAngle; // maximum steer angle the wheel can have
+    public Vector3 bodyCenterOfMass; //adjustable for better handling
+    private Rigidbody rb;
+
+    void Start()
+    {
+        
+        rb = this.gameObject.GetComponent<Rigidbody>();
+        rb.centerOfMass = bodyCenterOfMass;
+    }
 
     public void FixedUpdate()
     {
