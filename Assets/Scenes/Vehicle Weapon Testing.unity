@@ -506,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8431841215418763054, guid: 2ddce2e81d622f348af8e040122b157a, type: 3}
       propertyPath: LeftRightAxis
-      value: Horizontal2
+      value: Horizontal
       objectReference: {fileID: 0}
     - target: {fileID: 8431841215418763054, guid: 2ddce2e81d622f348af8e040122b157a, type: 3}
       propertyPath: maxMotorTorque
@@ -514,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8431841215418763054, guid: 2ddce2e81d622f348af8e040122b157a, type: 3}
       propertyPath: forwardBackAxis
-      value: Vertical2
+      value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 8431841215418763054, guid: 2ddce2e81d622f348af8e040122b157a, type: 3}
       propertyPath: maxSteeringAngle
@@ -893,7 +893,7 @@ MonoBehaviour:
   movingObject: {fileID: 175935520}
   upMoveSpeed: 5
   downMoveSpeed: 10
-  movementKey: Jump2
+  movementKey: Jump
 --- !u!1 &181533792
 GameObject:
   m_ObjectHideFlags: 0
