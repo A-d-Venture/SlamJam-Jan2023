@@ -1104,9 +1104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivotPoint: {fileID: 254031092}
-  upMoveSpeed: 20
-  downMoveSpeed: 30
-  angleHighBound: -45
+  upMoveSpeed: 50
+  downMoveSpeed: 60
+  angleHighBound: -30
   angleLowBound: 0
   movementKey: Fire3
 --- !u!1 &384543627
