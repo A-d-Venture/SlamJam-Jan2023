@@ -19,6 +19,9 @@ public class SimpleCarController : MonoBehaviour
     public Vector3 bodyCenterOfMass; //adjustable for better handling
     private Rigidbody rb;
 
+    [SerializeField] string forwardBackAxis = "Vertical";
+    [SerializeField] string LeftRightAxis = "Horizontal";
+
     // finds the corresponding visual wheel
     // correctly applies the transform
     public void ApplyLocalPositionToVisuals(WheelCollider collider)
@@ -47,8 +50,8 @@ public class SimpleCarController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        float motor = maxMotorTorque * Input.GetAxis("Vertical");
-        float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+        float motor = maxMotorTorque * Input.GetAxis(forwardBackAxis);
+        float steering = maxSteeringAngle * Input.GetAxis(LeftRightAxis);
 
         foreach (AxleInfo axleInfo in axleInfos)
         {

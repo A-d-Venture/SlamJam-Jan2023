@@ -11,11 +11,13 @@ public class LinearBetweenBounds : MonoBehaviour
     [SerializeField] private float upMoveSpeed = 5f;
     [SerializeField] private float downMoveSpeed = 10f;
 
+    [SerializeField] private string movementKey = "Jump";
+
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetButton("Jump") && (Vector3.Distance(movingObject.transform.position, upperBound.transform.position) > 0))
+        if (Input.GetButton(movementKey) && (Vector3.Distance(movingObject.transform.position, upperBound.transform.position) > 0))
         {
             movingObject.transform.position = Vector3.MoveTowards(movingObject.transform.position, upperBound.transform.position, upMoveSpeed * Time.deltaTime);
         }
